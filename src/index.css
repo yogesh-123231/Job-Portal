@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --font-script: "Mona Sans", sans-serif; 
+  --font-tektur: "Tektur",  sans-serif; 
+}
+body{
+  overflow-x: hidden;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
