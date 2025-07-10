@@ -23,7 +23,7 @@ const Home = () => (
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Job-Portal">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
