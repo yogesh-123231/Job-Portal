@@ -23,7 +23,6 @@ const Home = () => (
 
 const App = () => {
   return (
-    <Router basename="/Job-Portal">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -33,7 +32,6 @@ const App = () => {
         <Route path="/jobs" element={<JobList />} />
          <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
-    </Router>
   );
 };
 
