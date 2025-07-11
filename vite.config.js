@@ -6,5 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [
     react(), 
-    tailwindcss()]
+    tailwindcss()],
+    build: {
+    rollupOptions: {
+      external: ["react-icons/fa"], // ✅ add this line to prevent bundling issue
+    },
+  },
 });
