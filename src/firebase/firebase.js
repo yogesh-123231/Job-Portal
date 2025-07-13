@@ -1,4 +1,5 @@
-// Import Firebase SDK functions
+// src/firebase.js
+
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -7,28 +8,28 @@ import {
   signOut,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
-  updateProfile
+  updateProfile,
 } from "firebase/auth";
 
-// Your Firebase config (replace with your own if needed)
+// Firebase config using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBclWBkPX8Tbw3IWJU5fdEK1bnDUKVWBDI",
-  authDomain: "job-portal-a66c5.firebaseapp.com",
-  projectId: "job-portal-a66c5",
-  storageBucket: "job-portal-a66c5.appspot.com",
-  messagingSenderId: "599282020158",
-  appId: "1:599282020158:web:7ea6f0113f9e025845066f",
-  measurementId: "G-1MDQKVSF0X"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase App
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Auth and Provider
+// Setup Firebase Auth and Google Provider
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
-// Export everything needed
+// Export Firebase Auth functionality
 export {
   auth,
   googleProvider,
@@ -36,5 +37,5 @@ export {
   signOut,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
-  updateProfile
+  updateProfile,
 };
