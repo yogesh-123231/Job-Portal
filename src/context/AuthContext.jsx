@@ -1,57 +1,78 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useEffect, useState } from "react";
+import {
+  auth,
+  googleProvider
+} from "../firebase/firebase";
 
+import {
+  onAuthStateChanged,
+  signOut,
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  updateProfile,
+  sendPasswordResetEmail
+} from "firebase/auth";
+
+// Create context
 const AuthContext = createContext();
-
-// Hook for easy access to context
 export const useAuth = () => useContext(AuthContext);
 
-// Provider that wraps the app
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // Load user from localStorage on app load
+  // Listen for auth state changes
   useEffect(() => {
-    const storedUser = localStorage.getItem('loggedInUser');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+      setLoading(false);
+    });
+    return () => unsubscribe();
   }, []);
 
-  // Signup new user (mocked, just stored in localStorage)
-  const signup = (name, email, password) => {
-    const users = JSON.parse(localStorage.getItem('users')) || [];
-
-    const exists = users.find(u => u.email === email);
-    if (exists) return { error: 'Email already registered' };
-
-    const newUser = { name, email, password };
-    localStorage.setItem('users', JSON.stringify([...users, newUser]));
-    localStorage.setItem('loggedInUser', JSON.stringify(newUser));
-    setUser(newUser);
-    return { success: true };
+  // Sign up with email/password
+  const signupWithEmail = async (email, password, name) => {
+    const result = await createUserWithEmailAndPassword(auth, email, password);
+    if (name) {
+      await updateProfile(result.user, { displayName: name });
+      setUser({ ...result.user, displayName: name });
+    }
+    return result;
   };
 
-  // Login user (mocked)
-  const login = (email, password) => {
-    const users = JSON.parse(localStorage.getItem('users')) || [];
-
-    const found = users.find(u => u.email === email && u.password === password);
-    if (!found) return { error: 'Invalid email or password' };
-
-    localStorage.setItem('loggedInUser', JSON.stringify(found));
-    setUser(found);
-    return { success: true };
+  // Log in with email/password
+  const loginWithEmail = async (email, password) => {
+    return await signInWithEmailAndPassword(auth, email, password);
   };
 
-  // Logout user
-  const logout = () => {
-    localStorage.removeItem('loggedInUser');
-    setUser(null);
+  // Google login
+  const loginWithGoogle = async () => {
+    return await signInWithPopup(auth, googleProvider);
+  };
+
+  // Reset password
+  const resetPassword = async (email) => {
+    return await sendPasswordResetEmail(auth, email);
+  };
+
+  // Logout
+  const logout = async () => {
+    await signOut(auth);
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout }}>
-      {children}
+    <AuthContext.Provider
+      value={{
+        user,
+        loginWithEmail,
+        signupWithEmail,
+        loginWithGoogle,
+        logout,
+        resetPassword
+      }}
+    >
+      {!loading && children}
     </AuthContext.Provider>
   );
 };

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from "../context/AuthContext";
 import { Link as ScrollLink } from 'react-scroll';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 
 const Navbar = () => {
-  const { user, logout } = useAuth();
+  const auth = useAuth(); // Safe access
+  const user = auth?.user;
+  const logout = auth?.logout;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -20,24 +22,25 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="space-x-6 text-m hidden md:block">
-          <Link to="/" className="hover:text-[#9C69E2]">Home</Link>
-          <ScrollLink to="about" smooth={true} duration={500} offset={-80} className="cursor-pointer hover:text-[#9C69E2]">About</ScrollLink>
-          <Link to="/explore" className="hover:text-[#9C69E2]">Explore</Link>
-          <ScrollLink to="jobs" smooth={true} duration={500} offset={-80} className="cursor-pointer hover:text-[#9C69E2]">Jobs</ScrollLink>
-          <Link to="/post-job" className="hover:text-[#9C69E2]">Post a Job</Link>
-        </nav>
+        <nav className="space-x-6 text-gray-300 hidden md:block">
+  <Link to="/" className="hover:text-[#9C69E2]">Home</Link>
+  <ScrollLink to="about" smooth={true} duration={500} offset={-80} className="cursor-pointer hover:text-[#9C69E2]">About</ScrollLink>
+  <Link to="/explore" className="hover:text-[#9C69E2]">Explore</Link>
+  <ScrollLink to="jobs" smooth={true} duration={500} offset={-80} className="cursor-pointer hover:text-[#9C69E2]">Jobs</ScrollLink>
+  <Link to="/post-job" className="hover:text-[#9C69E2]">Post a Job</Link>
+</nav>
+
 
         {/* Desktop Auth */}
         <div className="hidden md:flex items-center">
           {user ? (
             <>
               <span className="text-white mr-4 hidden sm:inline">
-                {user?.name || 'User'}
+                {user.displayName || user.email || 'User'}
               </span>
               <button
-                onClick={logout}
-                className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-full hover:text-[#9C69E2] text-white"
+                onClick={() => logout?.()}
+                className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-full cursor-pointer hover:text-[#9C69E2] text-white"
               >
                 Logout
               </button>
@@ -45,12 +48,12 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/login">
-                <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 mx-2 rounded-full text-white">
+                <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 mx-2 rounded-full cursor-pointer text-white">
                   Login
                 </button>
               </Link>
               <Link to="/signup">
-                <button className="bg-green-500 hover:bg-green-600 px-4 py-2 mx-2 rounded-full text-white">
+                <button className="bg-green-500 hover:bg-green-600 px-4 py-2 mx-2 rounded-full cursor-pointer text-white">
                   Sign Up
                 </button>
               </Link>
@@ -77,10 +80,10 @@ const Navbar = () => {
             <div className="flex flex-col gap-3">
               {user ? (
                 <>
-                  <span className="text-sm text-gray-300">{user?.name || 'User'}</span>
+                  <span className="text-sm text-gray-300">{user.displayName || user.email || 'User'}</span>
                   <button
                     onClick={() => {
-                      logout();
+                      logout?.();
                       setIsMobileMenuOpen(false);
                     }}
                     className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-full text-white"

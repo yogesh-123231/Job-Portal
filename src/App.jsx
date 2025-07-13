@@ -9,7 +9,7 @@ import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Explore from "./Pages/Explore";
 import PostJob from "./Pages/PostJob";
-import ForgotPassword from './Pages/ForgotPassword';
+import ForgotPassword from './Pages/ForgotPassword'; 
 
 const Home = () => (
   <>
@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/explore" element={<Explore />} />
         <Route path="/post-job" element={<PostJob />} />
         <Route path="/jobs" element={<JobList />} />
-         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
   );
 };

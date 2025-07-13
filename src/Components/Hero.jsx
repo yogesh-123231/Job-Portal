@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const words = [
   { text: "LIFESTYLE", color: "text-sky-300" },
-  { text: "PASSION", color: "text-orange-400" },
+  { text: "PASSION", color: "text-emerald-400" },
   { text: "GOALS", color: "text-purple-500" },
 ];
 
@@ -119,37 +119,39 @@ const Hero = () => {
 
       {/* Desktop Floating Card */}
       <div className="hidden md:block absolute right-20 top-[60%] transform -translate-y-1/2 animate-bounce">
-        <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-6 rounded-2xl shadow-2xl border-2 border-green-400 hover:scale-105 transition-transform relative max-w-xs">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
-              <span className="text-2xl">🎉</span>
-            </div>
-            <div>
-              <h3 className="font-bold text-white text-lg">Live Update!</h3>
-              <p className="text-sm text-green-100">Just posted</p>
-            </div>
-          </div>
+  <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-2xl shadow-2xl border-2 border-indigo-400 hover:scale-105 transition-transform relative max-w-xs">
+    <div className="flex items-center gap-3 mb-4">
+      <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
+        <span className="text-2xl">🎉</span>
+      </div>
+      <div>
+        <h3 className="font-bold text-white text-lg">Live Update!</h3>
+        <p className="text-sm text-indigo-100">Just posted</p>
+      </div>
+    </div>
 
-          <p className="text-sm text-green-50 mb-4 font-medium">
-            🚀 New remote opportunity available! High-paying position with amazing benefits.
-          </p>
+    <p className="text-sm text-indigo-50 mb-4 font-medium">
+      🚀 New remote opportunity available! High-paying position with amazing benefits.
+    </p>
 
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2">
-              <span className="text-yellow-300 text-xs">⭐ 5.0</span>
-              <span className="text-green-100 text-xs">Company Rating</span>
-            </div>
-            <ScrollLink
-              to="jobs"
-              smooth={true}
-              duration={600}
-              offset={-80}
-              className="bg-white text-green-600 hover:bg-gray-100 py-2 px-4 rounded-full text-sm font-semibold transition-colors shadow-lg cursor-pointer"
-            >
-              View Now
-            </ScrollLink>
-          </div>
-        </div>
+    <div className="flex justify-between items-center">
+      <div className="flex items-center gap-2">
+        <span className="text-yellow-300 text-xs">⭐ 5.0</span>
+        <span className="text-indigo-100 text-xs">Company Rating</span>
+      </div>
+      <ScrollLink
+        to="jobs"
+        smooth={true}
+        duration={600}
+        offset={-80}
+        className="bg-white text-indigo-600 hover:bg-gray-100 py-2 px-4 rounded-full text-sm font-semibold transition-colors shadow-lg cursor-pointer"
+      >
+        View Now
+      </ScrollLink>
+    </div>
+  </div>
+
+
       </div>
     </section>
   );
