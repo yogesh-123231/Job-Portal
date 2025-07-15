@@ -1,18 +1,18 @@
 
+## 🧑‍💼 Job Portal 
 
-
-
-
-🧑‍💼 Job Portal 
-Live Demo: https://job-portal24.netlify.app
 
 A modern, fully responsive job portal web application built with React, Firebase Authentication, Supabase Database, and Tailwind CSS. This project allows users to search, filter, and apply for jobs seamlessly while ensuring secure authentication and clean UI/UX.
 
 <p align="center"> <img src="https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react" height="28" style="margin: 4px;"> <img src="https://img.shields.io/badge/Firebase-11.9.0-FFCA28?style=for-the-badge&logo=firebase" height="28" style="margin: 4px;"> <img src="https://img.shields.io/badge/TailwindCSS-4.1.8-38B2AC?style=for-the-badge&logo=tailwind-css" height="28" style="margin: 4px;"> <img src="https://img.shields.io/badge/Vite-6.3.5-646CFF?style=for-the-badge&logo=vite" height="28" style="margin: 4px;"> <img src="https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" height="28" style="margin: 4px;"> </p>
 
-🚀 Features
 
-🔐 Authentication
+## Live Demo: https://job-portal24.netlify.app
+
+
+## 🚀 Features
+
+## 🔐 Authentication
 
 Email & Password Authentication (via Firebase)
 
@@ -26,7 +26,7 @@ Forgot Password functionality
 
 Automatic Redirects after login/signup/logout
 
-💼 Job Listings
+## 💼 Job Listings
 
 Fetching real-time job data from Supabase
 
@@ -36,7 +36,7 @@ Apply Now button visible only after login
 
 No duplicate applications for same job
 
-🔍 Advanced Job Filters
+## 🔍 Advanced Job Filters
 
 Users can filter jobs based on:
 
@@ -50,7 +50,7 @@ Experience Level: Entry, Mid, Senior
 
 Clear All – One-click reset of all filters
 
-🎨 Modern UI/UX
+## 🎨 Modern UI/UX
 
 Built with Tailwind CSS
 
@@ -81,7 +81,7 @@ Accessible and keyboard-friendly
 
 ## 🧪 Getting Started Locally
 
-To run this project on your local development server:
+# 1. To run this project on your local development server:
 
 ```bash
 # 1. Clone the repository
@@ -89,13 +89,13 @@ git clone https://github.com/your-username/job-portal.git
 cd job-portal
 ```
 # 2. Install dependencies
-
+```
 npm install
-
 ```
 # 3. Setup environment variables
 
-# Create a .env file and add:
+#Create a .env file and add:
+```
 VITE_FIREBASE_API_KEY=your_firebase_api_key
 VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
 VITE_SUPABASE_URL=your_supabase_url
@@ -103,13 +103,12 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 # 4. Run the app
 npm run dev
-```
 
 ---
 
 ## 📁 Folder Structure
 
-```
+
 src/
 │
 ├── components/       # Reusable UI Components
@@ -119,7 +118,7 @@ src/
 ├── utils/            # Utility functions like filter logic
 ├── assets/           # Static assets like images and icons
 └── App.jsx           # Root component with routing logic
-```
+
 
 ---
 
@@ -146,13 +145,15 @@ src/
 
 ---
 
-🌐 Let's Connect
+## 🌐 Let's Connect
 
 I'm always open to new connections, collaborations, or opportunities. Feel free to reach out!
+```
 
-🔗 LinkedIn: Yogesh Dumane
+🔗 LinkedIn: linkedin.com/in/yogeshdumane
 
-📧 Gmail: yogeshdumane20@gmail.com
+📧 Gmail: yogeshdumane987@gmail.com
+```
 
 
 
