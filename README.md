@@ -163,11 +163,13 @@ npm run dev
 ---
 
 
-## 🌐 Let's Connect
 
-I'm always open to new connections, collaborations, or opportunities. Feel free to reach out!
+
+
 
 <h3>🌐 Let's Connect</h3>
+
+<p>I'm always open to new connections, collaborations, or opportunities. Feel free to reach out!</p>
 
 <p>
   <a href="https://www.linkedin.com/in/yogeshdumane/">
@@ -180,8 +182,6 @@ I'm always open to new connections, collaborations, or opportunities. Feel free 
 
 
 
-## 📜 License
-
 
 <h3>📜 License</h3>
 
@@ -190,9 +190,6 @@ I'm always open to new connections, collaborations, or opportunities. Feel free 
     <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License Badge">
   </a>
 </p>
-
-This project is licensed under the <a href="https://github.com/yogesh-123231/job-portal/blob/main/LICENSE">MIT License</a>.
-
 
 
 This project is licensed under the MIT License.
