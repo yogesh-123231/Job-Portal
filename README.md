@@ -1,5 +1,5 @@
 
-## 🧑‍💼 Job Portal 
+## <h1 align="center">🧑‍💼 Job Portal 24</h1>
 
 
 A modern, fully responsive job portal web application built with React, Firebase Authentication, Supabase Database, and Tailwind CSS. This project allows users to search, filter, and apply for jobs seamlessly while ensuring secure authentication and clean UI/UX.
@@ -101,7 +101,7 @@ Accessible and keyboard-friendly
 
 ## 🧪 Getting Started Locally
 
-# 1. To run this project on your local development server:
+1. To run this project on your local development server:
 
 ```bash
 # 1. Clone the repository
@@ -109,14 +109,13 @@ git clone https://github.com/your-username/job-portal.git
 cd job-portal
 ```
 
-
-# 2. Install dependencies
+2. Install dependencies
 ```
 npm install
 ```
 
 
-# 3. Setup environment variables
+3. Setup environment variables
 
 #Create a .env file and add:
 ```
@@ -127,12 +126,13 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
 
-# 4. Run the app
+4. Run the app
+
+
 npm run dev
 
 
 ---
-
 
 
 ## ✅ Future Enhancements
@@ -167,7 +167,8 @@ npm run dev
 
 I'm always open to new connections, collaborations, or opportunities. Feel free to reach out!
 ```
-<p align="left"> <a href="https://www.linkedin.com/in/yogeshdumane/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"> </a> <a href="mailto:yogeshdumane20@gmail.com"> <img src="https://img.shields.io/badge/Gmail-Message-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"> </a> </p>
+<p align="left"> <a href="https://www.linkedin.com/in/yogeshdumane/"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"> </a> <a href="mailto:yogeshdumane20@gmail.com"> <img src="https://img.shields.io/badge/Gmail-Message-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"> </a> </p>
+
 
 ```
 
@@ -175,6 +176,13 @@ I'm always open to new connections, collaborations, or opportunities. Feel free 
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+
+```
+<p align="left"> <a href="https://github.com/yogesh-123231/job-portal/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License Badge"> </a> </p>
+```
+
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this project with proper attribution.
 
 
