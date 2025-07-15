@@ -1,5 +1,5 @@
 
-## <h1 align="center">🧑‍💼 Job Portal 24</h1>
+## <h1 align="center">🧑‍💼 Job Portal</h1>
 
 
 A modern, fully responsive job portal web application built with React, Firebase Authentication, Supabase Database, and Tailwind CSS. This project allows users to search, filter, and apply for jobs seamlessly while ensuring secure authentication and clean UI/UX.
