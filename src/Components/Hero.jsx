@@ -43,16 +43,14 @@ const Hero = () => {
       <Navbar />
 
       <div className="max-w-4xl">
-        <h1 className="text-3xl md:text-6xl font-extrabold leading-tight mb-8 md:mb-10">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-8 md:mb-10">
           <span className="text-[#C2FFCB]">*</span> FIND THE JOB
           <br />
           THAT FITS YOUR
           <br />
           <span className="inline-block min-h-[1.5em] relative">
             <span
-              className={`absolute top-0 left-0 font-tektur transition-all duration-200 ease-in-out ${
-                words[wordIndex].color
-              }`}
+              className={`absolute top-0 left-0 font-tektur transition-all duration-200 ease-in-out ${words[wordIndex].color}`}
             >
               {displayedText}
             </span>
@@ -80,35 +78,35 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating Notification Card */}
-      <div className=" md:hidden mt-10 flex justify-center">
+      {/* Mobile Floating Notification Card (Updated to Indigo Theme) */}
+      <div className="md:hidden mt-10 flex justify-center">
         <div className="w-[90%] sm:w-[70%] animate-bounce">
-          <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-5 rounded-2xl shadow-2xl border-2 border-green-400 hover:scale-105 transition-transform relative">
+          <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-5 rounded-2xl shadow-2xl border-2 border-indigo-400 hover:scale-105 transition-transform relative">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 sm:w-12 h-12 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
                 <span className="text-base sm:text-lg">🎉</span>
               </div>
               <div>
                 <h3 className="font-bold text-white text-lg">Live Update!</h3>
-                <p className="text-xs sm:text-sm text-green-100">Just posted</p>
+                <p className="text-xs sm:text-sm text-indigo-100">Just posted</p>
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-green-50 mb-4 font-medium">
+            <p className="text-xs sm:text-sm text-indigo-50 mb-4 font-medium">
               🚀 New remote opportunity available! High-paying position with amazing benefits.
             </p>
 
             <div className="flex justify-between items-center flex-wrap gap-2">
               <div className="flex items-center gap-2">
                 <span className="text-yellow-300 text-xs">⭐ 5.0</span>
-                <span className="text-green-100 text-xs">Company Rating</span>
+                <span className="text-indigo-100 text-xs">Company Rating</span>
               </div>
               <ScrollLink
                 to="jobs"
                 smooth={true}
                 duration={600}
                 offset={-80}
-                className="bg-white text-green-600 hover:bg-gray-100 py-2 px-4 rounded-full text-xs sm:text-sm font-semibold transition-colors shadow-lg cursor-pointer"
+                className="bg-white text-indigo-600 hover:bg-gray-100 py-2 px-4 rounded-full text-xs sm:text-sm font-semibold transition-colors shadow-lg cursor-pointer"
               >
                 View Now
               </ScrollLink>
@@ -117,41 +115,39 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Desktop Floating Card */}
+      {/* Desktop Floating Card (Unchanged) */}
       <div className="hidden md:block absolute right-20 top-[60%] transform -translate-y-1/2 animate-bounce">
-  <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-2xl shadow-2xl border-2 border-indigo-400 hover:scale-105 transition-transform relative max-w-xs">
-    <div className="flex items-center gap-3 mb-4">
-      <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
-        <span className="text-2xl">🎉</span>
-      </div>
-      <div>
-        <h3 className="font-bold text-white text-lg">Live Update!</h3>
-        <p className="text-sm text-indigo-100">Just posted</p>
-      </div>
-    </div>
+        <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 rounded-2xl shadow-2xl border-2 border-indigo-400 hover:scale-105 transition-transform relative max-w-xs">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
+              <span className="text-2xl">🎉</span>
+            </div>
+            <div>
+              <h3 className="font-bold text-white text-lg">Live Update!</h3>
+              <p className="text-sm text-indigo-100">Just posted</p>
+            </div>
+          </div>
 
-    <p className="text-sm text-indigo-50 mb-4 font-medium">
-      🚀 New remote opportunity available! High-paying position with amazing benefits.
-    </p>
+          <p className="text-sm text-indigo-50 mb-4 font-medium">
+            🚀 New remote opportunity available! High-paying position with amazing benefits.
+          </p>
 
-    <div className="flex justify-between items-center">
-      <div className="flex items-center gap-2">
-        <span className="text-yellow-300 text-xs">⭐ 5.0</span>
-        <span className="text-indigo-100 text-xs">Company Rating</span>
-      </div>
-      <ScrollLink
-        to="jobs"
-        smooth={true}
-        duration={600}
-        offset={-80}
-        className="bg-white text-indigo-600 hover:bg-gray-100 py-2 px-4 rounded-full text-sm font-semibold transition-colors shadow-lg cursor-pointer"
-      >
-        View Now
-      </ScrollLink>
-    </div>
-  </div>
-
-
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-2">
+              <span className="text-yellow-300 text-xs">⭐ 5.0</span>
+              <span className="text-indigo-100 text-xs">Company Rating</span>
+            </div>
+            <ScrollLink
+              to="jobs"
+              smooth={true}
+              duration={600}
+              offset={-80}
+              className="bg-white text-indigo-600 hover:bg-gray-100 py-2 px-4 rounded-full text-sm font-semibold transition-colors shadow-lg cursor-pointer"
+            >
+              View Now
+            </ScrollLink>
+          </div>
+        </div>
       </div>
     </section>
   );
