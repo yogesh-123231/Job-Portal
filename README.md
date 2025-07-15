@@ -25,30 +25,30 @@ Or directly visit 👉 job-portal24.netlify.app
 
 ## 🔐 Authentication
 
-Email & Password Authentication (via Firebase)
+* Email & Password Authentication (via Firebase)
 
-Google OAuth for quick login/signup
+* Google OAuth for quick login/signup
 
-Protected Routes – Only authenticated users can apply for jobs
+* Protected Routes – Only authenticated users can apply for jobs
 
-Persistent Login – Users stay logged in across sessions
+* Persistent Login – Users stay logged in across sessions
 
-Forgot Password functionality
+* Forgot Password functionality
 
-Automatic Redirects after login/signup/logout
+* Automatic Redirects after login/signup/logout
 
 
 
 ## 💼 Job Listings
 
 
-Fetching real-time job data from Supabase
+* Fetching real-time job data from Supabase
 
-Display of all job posts with clean card UI
+* Display of all job posts with clean card UI
 
-Apply Now button visible only after login
+* Apply Now button visible only after login
 
-No duplicate applications for same job
+* No duplicate applications for same job
 
 
 
@@ -56,29 +56,29 @@ No duplicate applications for same job
 
 Users can filter jobs based on:
 
-Job Role: Design, Development, Marketing, Finance, etc.
+* Job Role: Design, Development, Marketing, Finance, etc.
 
-Job Type: Full-time, Part-time, Remote, Intern
+* Job Type: Full-time, Part-time, Remote, Intern
 
-Location: Popular Indian cities (Pune, Mumbai, Delhi, Bangalore, etc.)
+* Location: Popular Indian cities (Pune, Mumbai, Delhi, Bangalore, etc.)
 
-Experience Level: Entry, Mid, Senior
+* Experience Level: Entry, Mid, Senior
 
-Clear All – One-click reset of all filters
+* Clear All – One-click reset of all filters
 
 
 
 ## 🎨 Modern UI/UX
 
-Built with Tailwind CSS
+* Built with Tailwind CSS
 
-Smooth hover effects (e.g., background color transitions)
+* Smooth hover effects (e.g., background color transitions)
 
-Responsive design – Works on all screen sizes
+* Responsive design – Works on all screen sizes
 
-Clean animations for buttons and transitions
+* Clean animations for buttons and transitions
 
-Accessible and keyboard-friendly
+* Accessible and keyboard-friendly
 
 ---
 
@@ -166,20 +166,33 @@ npm run dev
 ## 🌐 Let's Connect
 
 I'm always open to new connections, collaborations, or opportunities. Feel free to reach out!
-```
-<p align="left"> <a href="https://www.linkedin.com/in/yogeshdumane/"> <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"> </a> <a href="mailto:yogeshdumane20@gmail.com"> <img src="https://img.shields.io/badge/Gmail-Message-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"> </a> </p>
 
+<h3>🌐 Let's Connect</h3>
 
-```
+<p>
+  <a href="https://www.linkedin.com/in/yogeshdumane/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+  </a>
+  <a href="mailto:yogeshdumane20@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-Message-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge">
+  </a>
+</p>
 
 
 
 ## 📜 License
 
 
-```
-<p align="left"> <a href="https://github.com/yogesh-123231/job-portal/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License Badge"> </a> </p>
-```
+<h3>📜 License</h3>
+
+<p>
+  <a href="https://github.com/yogesh-123231/job-portal/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License Badge">
+  </a>
+</p>
+
+This project is licensed under the <a href="https://github.com/yogesh-123231/job-portal/blob/main/LICENSE">MIT License</a>.
+
 
 
 This project is licensed under the MIT License.
