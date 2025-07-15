@@ -23,7 +23,7 @@ Or directly visit 👉 job-portal24.netlify.app
 
 ## 🚀 Features
 
-## 🔐 Authentication
+🔐 Authentication
 
 * Email & Password Authentication (via Firebase)
 
@@ -39,7 +39,7 @@ Or directly visit 👉 job-portal24.netlify.app
 
 
 
-## 💼 Job Listings
+💼 Job Listings
 
 
 * Fetching real-time job data from Supabase
@@ -52,7 +52,7 @@ Or directly visit 👉 job-portal24.netlify.app
 
 
 
-## 🔍 Advanced Job Filters
+🔍 Advanced Job Filters
 
 Users can filter jobs based on:
 
@@ -68,7 +68,7 @@ Users can filter jobs based on:
 
 
 
-## 🎨 Modern UI/UX
+🎨 Modern UI/UX
 
 * Built with Tailwind CSS
 
@@ -81,6 +81,7 @@ Users can filter jobs based on:
 * Accessible and keyboard-friendly
 
 ---
+
 
 
 ## ⚙️ Tech Stack
@@ -96,7 +97,9 @@ Users can filter jobs based on:
 | Build Tool         | Vite                                          |
 | Hosting            | Netlify                                       |
 
+
 ---
+
 
 
 ## 🧪 Getting Started Locally
@@ -128,11 +131,13 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 4. Run the app
 
-
+```
 npm run dev
+```
 
 
 ---
+
 
 
 ## ✅ Future Enhancements
@@ -161,8 +166,6 @@ npm run dev
 
 
 ---
-
-
 
 
 
