@@ -41,13 +41,23 @@
 ---
 
 ## 🧰 Tech Stack
-
-**Frontend** — React 19, Vite, Tailwind CSS v4, React Router v7, React Icons, React Scroll
-
-**Backend & Services** — Supabase (job listings DB), Firebase Auth (user authentication)
-
-**Deployment** — Netlify
-
+ 
+### Frontend
+<p>
+  <img src="https://skillicons.dev/icons?i=react" height="40" title="React 19" />
+  <img src="https://skillicons.dev/icons?i=vite" height="40" title="Vite" />
+  <img src="https://skillicons.dev/icons?i=tailwind" height="40" title="Tailwind CSS v4" />
+  <img src="https://skillicons.dev/icons?i=js" height="40" title="JavaScript" />
+</p>
+### Backend & Services
+<p>
+  <img src="https://skillicons.dev/icons?i=supabase" height="40" title="Supabase — Job Listings DB" />
+  <img src="https://skillicons.dev/icons?i=firebase" height="40" title="Firebase Auth" />
+</p>
+### Deployment
+<p>
+  <img src="https://skillicons.dev/icons?i=netlify" height="40" title="Netlify" />
+</p>
 ---
 
 ## 🏗️ Project Structure
