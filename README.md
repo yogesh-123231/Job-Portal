@@ -10,7 +10,8 @@
 <br/>
 
 <!-- Paste your GitHub CDN screenshot URL here -->
-![Job Portal Preview](your-screenshot-url-here)
+
+![Job Portal Preview](https://github.com/user-attachments/assets/4612073d-1015-4d1a-bcf4-0f06579be24e)
 
 <br/>
 
