@@ -49,11 +49,13 @@
   <img src="https://skillicons.dev/icons?i=tailwind" height="40" title="Tailwind CSS v4" />
   <img src="https://skillicons.dev/icons?i=js" height="40" title="JavaScript" />
 </p>
+
 ### Backend & Services
 <p>
   <img src="https://skillicons.dev/icons?i=supabase" height="40" title="Supabase — Job Listings DB" />
   <img src="https://skillicons.dev/icons?i=firebase" height="40" title="Firebase Auth" />
 </p>
+
 ### Deployment
 <p>
   <img src="https://skillicons.dev/icons?i=netlify" height="40" title="Netlify" />
